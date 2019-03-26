@@ -1,0 +1,12 @@
+Convenções - 
+para criar nomes de arquivos componentes
+{nome do componente} . component
+-> menubar.component.ts
+
+o nome da classe do menu seguindo padrão CamelCase
+-> MenubarComponent 
+
+O template segue a mesma regra; o template do componente possui uma url, que precisa
+ser o mesmo nome do arquivo .ts, porém sua extensão é .html, claro,
+para deixar a identificação muito clara e bem definida. O mesmo 
+ocorre com o arquivo .css.
