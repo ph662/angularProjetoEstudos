@@ -14,3 +14,17 @@ O template segue a mesma regra; o template do componente possui uma url, que pre
 ser o mesmo nome do arquivo .ts, porém sua extensão é .html, claro,
 para deixar a identificação muito clara e bem definida. O mesmo 
 ocorre com o arquivo .css.
+
+
+arquivo angular.json
+parte de
+    "styles": [
+        /*aqui carrega o css global que sera usado em todos os componentes*/
+    "src/styles.css"
+    ],
+    "scripts": [
+        /*aqui carrega o script global que nao pertence a um componente especifico*/
+    ],
+
+
+
