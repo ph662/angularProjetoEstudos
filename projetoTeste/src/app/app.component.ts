@@ -22,5 +22,5 @@ webpack(encapsulado pelo angular CLI), module bundler
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projetoTeste';
+  title = 'Projeto do Phelipe';
 }
