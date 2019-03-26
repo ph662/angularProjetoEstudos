@@ -1,3 +1,7 @@
+Atalhos - 
+cria projeto - ng new projetoteste
+inicializa e abre o navegador - ng serve --open   
+
 Convenções - 
 para criar nomes de arquivos componentes
 {nome do componente} . component
