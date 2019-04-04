@@ -15,7 +15,9 @@ ser o mesmo nome do arquivo .ts, porém sua extensão é .html, claro,
 para deixar a identificação muito clara e bem definida. O mesmo 
 ocorre com o arquivo .css.
 
-
+-------------------------------------------------
+2.01
+-------------------------------------------------
 arquivo angular.json
 parte de
     "styles": [
@@ -26,5 +28,12 @@ parte de
         /*aqui carrega o script global que nao pertence a um componente especifico*/
     ],
 
+Baixa o bootstrap por:
+npm install bootstrap@4.1.1
 
+quando terminar de instalar ele é referenciado em package.json em "dependencies": {
+os arquivos baixados vao pra dentro da pasta node modules
+o baixado tem que ser adicionado no styles do angular.json: 
+"./node_modules/bootstrap/dist/css/bootstrap.min.css"
+-------------------------------------------------
 
