@@ -3,6 +3,8 @@ cria projeto - ng new projetoteste
 inicializa e abre o navegador - ng serve --open   
 
 Convenções - 
+Primeiro import de tudo que é default do Angular, depois os nossos imports
+
 para criar nomes de arquivos componentes
 {nome do componente} . component
 -> menubar.component.ts
@@ -35,5 +37,18 @@ quando terminar de instalar ele é referenciado em package.json em "dependencies
 os arquivos baixados vao pra dentro da pasta node modules
 o baixado tem que ser adicionado no styles do angular.json: 
 "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+-------------------------------------------------
+2.4
+O console avisa qual é o erro, o componennte ap-photo não é conhecido como módulo
+angular. 
+
+Um módulo é um agrupador de componentes, um módulo angular está para uma classe java assim como 
+um componente angular está para atributos de classe java.
+
+por enquanto o app só tem um módulo, que é o app.module.ts 
+
+app.module carrega um componente que é o AppComponent, e no template de AppComponent
+foi chamado o componente novo criado.
+Preciso declarar em app.module que AppComponent possui PhotoComponent.
 -------------------------------------------------
 

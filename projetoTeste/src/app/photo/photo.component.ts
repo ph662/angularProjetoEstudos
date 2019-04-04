@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     //template- para escrever o template aqui mesmo
     templateUrl: 'photo.component.html'
 })
-export class PhotoComponente {
+export class PhotoComponent {
 
     title='Projeto do Phelipe';
     description="Pássaro";
