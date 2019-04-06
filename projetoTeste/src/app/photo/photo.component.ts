@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'ap-photo',
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PhotoComponent {
 
     title='Projeto do Phelipe';
-    description="Pássaro";
-    url="https://upload.wikimedia.org/wikipedia/commons/b/bd/Red_Warbler_-_Sinaloa_-_Mexico_S4E1238_%2822444216014%29.jpg";
+    @Input() description="";
+    @Input() url="";
 
 }
