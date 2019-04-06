@@ -77,4 +77,10 @@ o acesso aos componentes do módulo.
 
 BrowserModule do angular possui recursos do angular para usar no navegador, 
 por padrão ele é importado pelo angular cli na aplicação.
+-------------------------------------------------
+2.9
+Diretiva pode mudar o comportamento de um componente já existente. ngFor
+é preciso passar o data binding [] [description]  pq se nao ele vai passar a string, e eu 
+quero a propriedade.
 
+ngFor é a diretiva angular que já cria a lista e itera sobre ela p nós.

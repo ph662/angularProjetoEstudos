@@ -22,5 +22,20 @@ webpack(encapsulado pelo angular CLI), module bundler
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
+  photos = [
+    {
+      url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Red_Warbler_-_Sinaloa_-_Mexico_S4E1238_%2822444216014%29.jpg",
+      description: "Pássaro"
+    },
+    {
+      url: "https://upload.wikimedia.org/wikipedia/commons/a/a2/MosMetro_Fonvizinskaya_01-2017.jpg",
+      description: "Rússia"
+    },
+    {
+      url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Red_Warbler_-_Sinaloa_-_Mexico_S4E1238_%2822444216014%29.jpg",
+      description: "Pássaro"
+    }
+  ]
+
 }
