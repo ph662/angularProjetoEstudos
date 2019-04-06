@@ -57,3 +57,24 @@ são Inbound Properties, ou seja, aceitam receber valores na declaração do com
 
 Lembrando que se fosse passado [url] na verdade estaria passando para propriedade,
 sem o colchete estou passando a string diretamente.
+-------------------------------------------------
+2.7
+app.module - modulo raiz do angular - primeiro carregado pelo angular.
+Para o exemplo do componente de photo, a cada novo componente ele precisa 
+pertencer a um modulo, e se forem adicionando muitos componentes na raiz,
+o modulo raiz vai ficar enorme.
+A ideia é criar 'feature Module' - Modulo com componentes relacionados
+photos.module.ts será o feature module. 
+
+O novo feature deve ser importado no import de app.module.ts para que possamos
+utilizar os componentes criados.
+
+Ainda em photos.module.ts, 
+@NgModule declaration possui tudo que o módulo tem, mas para que este componente 
+seja visto fora do módulo de photos precisa do 'exports', é aqui que é controlado 
+o acesso aos componentes do módulo.
+
+
+BrowserModule do angular possui recursos do angular para usar no navegador, 
+por padrão ele é importado pelo angular cli na aplicação.
+
