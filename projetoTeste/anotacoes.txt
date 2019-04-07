@@ -139,5 +139,22 @@ qualquer componente da aplicação poderá ver A MESMA INSTANCIA deste service.
 3.9
 Para fazer o refactor rename da propriedade e alterar em todo o app, clica
 com o botão direito sobre o nome, 'rename symbol', escreve e aperta enter
+-------------------------------------------------
+3.10
+Ate o momento buscamos as fotos no constructor da classe AppComponent,
+na construção de um componente, primeiro o angular cria uma instancia de
+appComponent, depois aplica o decorator @Component pra de fato tornar a 
+instância um componente.
 
+Nessa nova organização, constructor serve apenas para injeção de dependência.
+Qualquer lógica que precisar utilizar, será colocada em uma das fases do 
+CICLO DE VIDA do angular. 
 
+Para este cenário o ngOnInit do ciclo de vida será utilizado para fazer a lógica,
+de consumo que estava encapsulada no constructor.
+
+O ngOnInit acontece apos a instanciação e após o componente receber as inbound
+properties.
+
+Foi movido o module HttpClientModule para o photos module pq a aplicação toda não 
+precisa do componente, apenas os componentes de Photos.
