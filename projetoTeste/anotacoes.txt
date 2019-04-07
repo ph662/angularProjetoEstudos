@@ -135,6 +135,9 @@ Ao criar um serviço é preciso do decorator @Injectable, este decorator diz que
 o service é injetável.
 @Injectable({providedIn:'root'})  root diz que será um service raiz, ou seja,
 qualquer componente da aplicação poderá ver A MESMA INSTANCIA deste service.
-
+-------------------------------------------------
+3.9
+Para fazer o refactor rename da propriedade e alterar em todo o app, clica
+com o botão direito sobre o nome, 'rename symbol', escreve e aperta enter
 
 

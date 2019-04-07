@@ -15,7 +15,10 @@ export class AppComponent {
     photoService
       .listFromUser('flavio')
       .subscribe(
-        photos => this.photos = photos,
+        photos => {
+          console.log(photos[0].likes);//tipagem vindo da nova interface
+          this.photos = photos
+        },
         err => console.log(err)
       );
   }
