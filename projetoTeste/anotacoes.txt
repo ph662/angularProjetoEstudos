@@ -114,5 +114,27 @@ Mas é melhor usar arrow function
 
 
 O subscribe recebe dois parametros, o primeiro é o callback de sucesso, o segundo é o de erro.
+-------------------------------------------------
+3.8
+Neste cenário eu tenho 30 componentes, mas apenas em 6 quero que tenha acesso a api de fotos, o 
+problema é que a instrução ficará repetida em 6 lugares:
+    http
+      .get<Object[]>('http://localhost:3000/flavio/photos') //aqui ainda n faz request
+      .subscribe(
+        photos => this.photos = photos,
+        err => console.log(err)
+      );
+Este trabalho de acesso em api fica isolado em classes de serviços.
+
+Ao colocar public ou private na variavel do construturo o TS entende 
+que essa variável agora é da classe
+- constructor(public http: HttpClient) { 
+
+
+Ao criar um serviço é preciso do decorator @Injectable, este decorator diz que
+o service é injetável.
+@Injectable({providedIn:'root'})  root diz que será um service raiz, ou seja,
+qualquer componente da aplicação poderá ver A MESMA INSTANCIA deste service.
+
 
 
