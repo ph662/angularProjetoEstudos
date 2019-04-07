@@ -84,3 +84,13 @@ Diretiva pode mudar o comportamento de um componente já existente. ngFor
 quero a propriedade.
 
 ngFor é a diretiva angular que já cria a lista e itera sobre ela p nós.
+-------------------------------------------------
+3.5
+Angular possui o HttpClient para se comunicar com serviços externos.
+
+Primeiro adicione HttpClientModule em app.module.ts
+
+depois injete na classe que deseja usar:
+        constructor(http: HttpClient){
+        }
+new HttpClient de angular/common/http  recebe no construtor uma classe abstrata HttpHandler.

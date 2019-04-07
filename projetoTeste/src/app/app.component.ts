@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 /*
@@ -23,19 +24,10 @@ webpack(encapsulado pelo angular CLI), module bundler
 })
 export class AppComponent {
 
-  photos = [
-    {
-      url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Red_Warbler_-_Sinaloa_-_Mexico_S4E1238_%2822444216014%29.jpg",
-      description: "Pássaro"
-    },
-    {
-      url: "https://upload.wikimedia.org/wikipedia/commons/a/a2/MosMetro_Fonvizinskaya_01-2017.jpg",
-      description: "Rússia"
-    },
-    {
-      url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Red_Warbler_-_Sinaloa_-_Mexico_S4E1238_%2822444216014%29.jpg",
-      description: "Pássaro"
-    }
-  ]
+  photos = [];
+  
+  constructor(http: HttpClient){
+    console.log(http);
+  }
 
 }
