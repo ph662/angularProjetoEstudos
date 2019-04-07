@@ -24,10 +24,16 @@ webpack(encapsulado pelo angular CLI), module bundler
 })
 export class AppComponent {
 
-  photos = [];
-  
-  constructor(http: HttpClient){
-    console.log(http);
+  photos: Object = [];
+
+  constructor(http: HttpClient) {
+
+    http
+      .get<Object[]>('http://localhost:3000/flavio/phstos') //aqui ainda n faz request
+      .subscribe(
+        photos => this.photos = photos,
+        err => console.log(err)
+      ); //em subscribe que a requisição será disparada
   }
 
 }

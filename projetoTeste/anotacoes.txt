@@ -94,3 +94,25 @@ depois injete na classe que deseja usar:
         constructor(http: HttpClient){
         }
 new HttpClient de angular/common/http  recebe no construtor uma classe abstrata HttpHandler.
+-------------------------------------------------
+3.7
+http.get retorna um observable, um "observável", ao se inscrever no observable, assim que os dados
+chegarem ele vai me notificar.
+
+Angular 2+ trabalha com observable que vem do pacote RXJS, mto poderoso pra trabalhar com 
+operação assincrona. Recurso mais rico do que o promisse javascript.
+
+quando os dados chegarem o subscribe joga pra função que está dentro dele:
+
+.subscribe(
+    function(photos){
+        this.photos = photos
+    }
+)
+Mas é melhor usar arrow function
+.subscribe(photos => this.photos = photos);
+
+
+O subscribe recebe dois parametros, o primeiro é o callback de sucesso, o segundo é o de erro.
+
+
