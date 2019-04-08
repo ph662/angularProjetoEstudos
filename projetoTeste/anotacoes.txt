@@ -158,3 +158,14 @@ properties.
 
 Foi movido o module HttpClientModule para o photos module pq a aplicação toda não 
 precisa do componente, apenas os componentes de Photos.
+-------------------------------------------------
+4.2
+criando componente via cli
+
+ng generate component photos/photo-list
+
+Retiro "exports: [PhotoComponent]" de photos.module pq ngm de fora 
+precisa ver este componente interno ao Photos.module
+
+Altera configuração dos imports para que mostre apenas uma aspa simples ao redor
+de strings > File > Preferences > Settings > Filtra por quote > Quote style 'single'
